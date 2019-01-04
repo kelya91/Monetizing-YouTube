@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <title>Monetizing YouTube</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+		<a class="navbar-brand" href="index.html">Monetizing YouTube!</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        
+        <ul class="nav navbar-nav navbar-right">
+            <a href="http://www.youtube.com" target="_blank"><img src="static/images/youtube.png" style="height:50px;"></a>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+	<div class="col-md-12" style="margin-top: 75px;">
+		<h1><img src="static/images/YouTubeLogo.png" style="width:200px; border:0px">
+		<span style="margin-left: 50px; color:rgba(56, 56, 56, 0.667); font-weight: bold;">
+			Earnings Reflected by YouTube Category
+		</span>
+		</h1>
+	</div>
+	<div class="col-md-12" style="margin-top:25px;">
+		<div class="col-md-2">
+		    <h5>Select Chart:</h5>
+            <select id="selDataset" onchange="getData(this.value)">
+                <option value="dataset1">Earnings vs. Views</option>
+                <option value="dataset2">Earnings vs. Subscribers</option>
+                <option value="dataset3">Earnings vs. Uploads</option>
+            </select>
+		</div>
+		<div class="col-md-10">
+            <div id="bar"></div>
+            <div id="bubble"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="static/js/app.js"></script>
+</body>
+</html>

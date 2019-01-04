@@ -1,0 +1,1 @@
+d3.json("/categories").then(data => console.log(data))
